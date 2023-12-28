@@ -9,3 +9,17 @@
     top: 0;
 }
 
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Escondendo o campo para pesquisa em telas pequenas*/
+
+@media screen and (max-width: 834px) {
+    .cabecalho__pesquisar__item {
+        display: none;
+    }
+   
+}
+
