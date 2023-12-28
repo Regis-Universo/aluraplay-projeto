@@ -1,0 +1,11 @@
+/*A propriedade display: flex faz com que todos os elemnentos do container fiquem lado a lado. Esse é o  comportamento padrão do Flexbox quando aplicado a um container.
+É necessário aplicar display: flex no pai dos itens que deseja alinhar com Flexbox.*/
+
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
