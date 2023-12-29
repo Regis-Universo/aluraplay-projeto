@@ -1,6 +1,8 @@
 /*A propriedade display: flex faz com que todos os elemnentos do container fiquem lado a lado. Esse é o  comportamento padrão do Flexbox quando aplicado a um container.
 É necessário aplicar display: flex no pai dos itens que deseja alinhar com Flexbox.*/
 
+/* CABEÇALHO */
+
 .cabecalho__container {
     display: flex;
     justify-content: space-between;
@@ -9,17 +11,37 @@
     top: 0;
 }
 
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+/* RODAPÉ */
+
+/*É possível aplicar os valores de flex-direction e flex-wrap em apenas uma propriedade, chamada flex-flow, recebendo o valor colum wrap. Para testarmos seu efeito, comentaremos o código das propriedades anteriores. */
+
 .rodape__container {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    flex-flow: column wrap;
 }
 
 /*Escondendo o campo para pesquisa em telas pequenas*/
 
-@media screen and (max-width: 834px) {
+@media (min-width: 834px) {
+
+     /* CABEÇALHO */
+     
     .cabecalho__pesquisar__item {
-        display: none;
+        display: block;
     }
-   
+
+    /* RODAPÉ */
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+
 }
+
 
