@@ -15,6 +15,16 @@
     display: none;
 }
 
+/* SUPERIOR SEÇÃO */
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
 /* RODAPÉ */
 
 /*É possível aplicar os valores de flex-direction e flex-wrap em apenas uma propriedade, chamada flex-flow, recebendo o valor colum wrap. Para testarmos seu efeito, comentaremos o código das propriedades anteriores. */
